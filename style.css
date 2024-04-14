@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+display: flex;
+align-items: center;
+padding: 10px 20px;
+background-color: gray;
+border-radius: 10px;
+}
+.searchinput{
+    border: none;
+    background-color: transparent;
+}
+.searchinput::placeholder{
+    color: lightgray;
+}
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+
+}
+.slider{
+    background-image: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+.sliderwrapper{
+    display: flex ;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderbg{
+width: 750px;
+height: 750px;
+border-radius: 50%;
+position:absolute;
+}
+
+.sliderimg{
+    z-index: 1;
+}
+
+
+.slidertitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.sliderprice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buybutton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buybutton:hover{
+    background-color: white;
+    color: black;
+}
+.slideritem:nth-child(1) .sliderbg{
+    background-color: #369e62;
+}
+.slideritem:nth-child(2) .sliderbg{
+    background-color: rebeccapurple;
+}
+.slideritem:nth-child(3) .sliderbg{
+    background-color: teal;   
+}
+.slideritem:nth-child(4) .sliderbg{
+    background-color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderbg{
+    background-color: rgb(124, 115, 80);
+}
+
+.slideritem:nth-child(1) .sliderprice{
+    background-color: #369e62;
+}
+.slideritem:nth-child(2) .sliderprice{
+    background-color: rgba(54, 131, 199, 0.493);
+}
+.slideritem:nth-child(3) .sliderprice{
+    background-color: teal;   
+}
+.slideritem:nth-child(4) .sliderprice{
+    background-color: cornflowerblue;
+}
+.slideritem:nth-child(5) .sliderprice{
+    background-color: rgb(236, 115, 23);
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.featureicon{
+    width: 50px;
+    height: 50px;
+}
+.featuretitle{
+    font-size: 20px;
+    font-weight: 600;
+      margin: 20px;
+}
+.featuredesc{
+    color:gray;
+    width: 50%;
+    height: 100px;
+}
+.product {
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  .productimg{
+    width: 50%;
+  }
+
+  .productdetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+  .producttitle{
+    font-size: 75px;
+    font-weight: 900;
+  }
+  .productdesc{
+    font-style: 24px;
+    color: grey;
+  }
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.color:last-child{
+    background-color: darkblue;
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+   margin-right: 10px;
+   cursor: pointer;
+   font-size: 20px;
+}
+.productbutton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productbutton:hover{
+    background-color: white;
+    color: black;
+}
